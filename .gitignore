@@ -1,0 +1,56 @@
+#######################
+# PHP
+#######################
+
+*.log                 # Hatalar veya debug log dosyaları
+*.tmp                 # Geçici dosyalar
+*.cache               # Önbellek dosyaları
+*.bak                 # Yedek dosyalar
+
+# Ortam dosyaları (gizli bilgiler)
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Composer klasörü (php bağımlılık yöneticisi)
+vendor/
+
+#######################
+# Node.js
+#######################
+
+node_modules/         # Node.js bağımlılıkları
+npm-debug.log*        # npm hata logları
+yarn-debug.log*       # yarn hata logları
+yarn-error.log*
+
+# Derleme çıktıları (örneğin webpack)
+dist/
+build/
+
+#######################
+# Docker
+#######################
+
+# Docker compose tarafından oluşturulabilecek runtime dosyaları
+docker-compose.override.yml
+.docker/
+
+# Docker volume klasörleri (örneğin veritabanı volume'leri)
+data/
+mysql/
+dbdata/
+
+#######################
+# VS Code
+#######################
+
+.vscode/              # Kullanıcıya özel editor ayarları
+
+#######################
+# Sistem Dosyaları
+#######################
+
+.DS_Store             # macOS dosyası
+Thumbs.db             # Windows önizleme dosyası
