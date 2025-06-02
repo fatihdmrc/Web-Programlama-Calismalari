@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form elemanları</title>
+</head>
+
+<body>
+    <!-- Method get olarak belirtilirse veriler açık bir şekilde gönderilir fakat POST olarak belirtilirse gizli olarak gönderilir-->
+    <!--autocomplete özelliği ile forma önceki girilen veriler otomatik olarak tamamlanır.-->
+    <fieldset>
+        <legend>Form Elemanları</legend>
+        <form action="" method="GET" autocomplete="off">
+            <fieldset>
+                <legend>Bölüm 1</legend>
+                <label>Ad:</label>
+                <input type="text" id="ad" name="Ad" /><br>
+                <label>Soyad:</label>
+                <input type="text" id="soyad" name="Soyad" /> <br>
+                <label>Cinsiyet:</label>
+                <input type="radio" name="Cinsiyet" value="Erkek" /> <label>Erkek</label>
+                <input type="radio" name="Cinsiyet" value="Kadın" /> <label>Kadın</label><br>
+                <label>Hangi şehirlerde ikamet edebilirsiniz?</label><br><input type="checkbox" value="Ankara"
+                    name="Sehir1" /><label>Ankara</label> <br>
+                <input type="checkbox" value="Istanbul" name="Sehir2" /> <label>İstanbul</label><br>
+                <input type="checkbox" value="Izmır" name="Sehir3"><label>İzmir</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Bölüm 2</legend>
+                <label>Tarih</label><input type="date" /><br>
+                <label>Tarih Saat Dakika:</label><input type="datetime-local" /><br>
+                <label>Ay seçimi:</label><input type="month" /><br>
+                <label>Hafta seçimi:</label><input type="week" /><br>
+                <label>Sayı girişi:</label><input type="number" /><br>
+                <label>Email girişi:</label><input type="email" /><br>
+                <label>Renk seçimi:</label><input type="color" /><br>
+                <label>Dosya seçimi:</label><input type="file" /><br>
+                <label>Aralık:</label><input type="range" /><br>
+                <input type="tel" name="" id="" placeholder="500-500-50-50"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Bölüm 3</legend>
+                <label>Seçenekler arasından seçim:</label>
+                <select>
+                    <option>Seçenek 1</option>
+                    <option>Seçenek 2</option>
+                    <option>Seçenek 3</option>
+                </select><br>
+                <label>Büyük metin giriş alanı:</label><br><textarea></textarea><br>
+                <label>Buton:</label><button type="button">Buton</button><br>
+                <label>Şifre Girişi:</label><input type="password"><br>
+                <label>Pasif:</label><input type="text" value="deneme" disabled><br>
+                <label>Maximum uzunluk kısıtlaması:</label><input type="text" maxlength="3"><br>
+                <label>İpcucu:</label><input type="text" placeholder="ipucu burada"><br>
+                <label>Gerekli</label><input type="text" name="gereklialan" required><br>
+                <input type="submit" value="Gönder" />
+                <input type="reset" value="Temizle" />
+
+            </fieldset>
+        </form>
+    </fieldset>
+</body>
+<!-- GET ile giderken input name'i olarka tarayıcıda yazar. Hangi inputtan geldiğini burdan anlayabiliriz. POST ile gönderilirken boyut sınırı yoktur. Bu yüzden dosya gönderileceği zaman POST ile gönderilir.-->
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Tablo Çalışmaları</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <table border="1"> <!-- Tablo oluşturmak için kullanılan etiket-->
+        <caption>Tablo 1 : Açıklama</caption> <!--Tablo açıklaması-->
+        <thead><!--Tablo baş kısmı oluşturmak için-->
+            <tr> <!--Table Row : tablo satırı oluşturur-->
+                <th>Sütun 1</th> <!--Sütun isimlerini oluşturuyoruz-->
+                <th>Sütun 2</th>
+                <th>Sütun 3</th>
+                <th>Sütun 4</th>
+                <th>Sütun 5</th>
+                <th>Sütun 6</th>
+            </tr>
+        </thead>
+        <!-- Burdan itibaren tablo başlık kısmı bitti artık tablonun gövdesini oluşturacağız-->
+        <tbody> <!--Tablo gövdesi oluşturmak için-->
+            <tr> <!--1. satır-->
+                <td>Tablo verisi </td> <!--Tablo verisi: table data-->
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+            </tr>
+            <tr> <!--2. satır-->
+                <td>Tablo verisi </td>
+                <td rowspan="2">Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+            </tr>
+            <tr> <!--3. satır-->
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+            </tr>
+            <tr> <!--4. satır-->
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+                <td>Tablo verisi </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6">Tablo sonu verisi</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

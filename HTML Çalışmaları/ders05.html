@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biçimlendirme</title>
+    <style>
+        .deneme {
+            background-color: cyan;
+            border: 2px solid tomato;
+            margin: 50px;
+            padding: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="color:red">Kırmızı paragraf</p>
+    <h1 style="background-color: black; color:white">Beyaz başlık siyah arkaplanlı</h1>
+    <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">Farklı fontlu yazı</h2>
+    <p style="font-size: 300%;">Büyük paragraf</p>
+    <p>Paragraf metni burada başlıyor.<b>Kalın olarak yazılmış metin.</b>Bu da <strong>vurgulanmış güçlü
+            metin</strong>.<i>İtalik olarak yazılmış metin.</i> Bu da <em>vurgulanan metin</em>. <mark>İşaretli
+            metin.</mark> <small>Daha küçük metin.</small>
+        <del>Silinen metin.</del><ins>Eklenen metin.</ins>
+        <sub>Alt simge metni</sub>
+        <sup>Üst simge metni</sup>
+    </p>
+    <!-- b ile strong arasında fark vardır. B önemi olmadan kalın yapar fakat strong ile güçlü metin olur seo açısından etkisi vardır.-->
+    <blockquote cite="#"> <!--cite özelliği ile kaynak belirtilebilir-->
+        Başka bir metinden alınan alıntılar bu şekilde blockquote kullanılarak gösterilir. Biraz soldan boşluk verir. Bu
+        da alıntı olduğunu gösterir.
+    </blockquote>
+    <p>Bu bir paragraftır. <q>Kısa bir alıntı</q>. Bir kısaltma yazalım. <abbr
+            title="Türkiye Büyük Millet Meclisi">TBMM</abbr></p>
+    <address>Adres satırları</address>
+    <bdo dir="rtl">Sağdan sola yazılan metin</bdo><br>
+    <bdo dir="ltr">Soldan sağa yazılan metin</bdo>
+    <h1 style="background-color: tomato;">Arkaplanı tomato olan başlık</h1>
+    <h1 style="background-color: dodgerblue;">Arkaplanı dodgerblue olan başlık</h1>
+    <h1 style="border: 1px solid violet;">Kenarlık rengi violet olan başlık</h1>
+    <p style="background-color:rgb(14, 216, 10)">HTML de renk değerleri hex rgb ve hsl olarak verilebilir</p>
+    <p style="border: 2px solid #3ae0e0;">Kenarlık içeren paragraf</p>
+    <h3 style="color:rgba(166, 166,7, 0.3);">Saydamlık değeri içeren başlık</h3>
+    <h3 style="color:rgba(166, 166,7, 0.7);">Saydamlık değeri içeren başlık 2 </h3>
+    <div class="deneme">
+        <p>Div içinde bir paragraf</p>
+    </div>
+    <div>
+        <p>Diğer bir div içinde paragraf</p>
+    </div>
+</body>
+
+</html>
